@@ -3,6 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
+use App\Player;
 
 class RockBeatsScisorsTest extends TestCase
 {
