@@ -6,18 +6,18 @@ use App\RockPaperScissors as Game;
 use App\Models\Player;
 use PHPUnit\Framework\TestCase;
 
-class RockBeatsScissors extends TestCase
+class ScissorsBeastsPapper extends TestCase
 {
 
     /** @test */
-    public function test_player1_rock_player2_scissors_1_wins()
+    public function test_player1_scissors_player2_papper_1_wins()
     {
         $game = new Game;
         $player1 = new Player;
         $player2 = new Player;
 
-        $player1->chose("Rock");
-        $player2->chose("Scissors");
+        $player1->chose("Scissors");
+        $player2->chose("Papper");
         $winner = $game->start($player1, $player2);
 
         $this->assertEquals("Player 1 wins", $winner);

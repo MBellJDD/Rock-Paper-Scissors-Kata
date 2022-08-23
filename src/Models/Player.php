@@ -21,5 +21,8 @@ class Player
         if ($gesture == "Scissors") {
             $this->gesture = new Scissors;
         }
+        if ($gesture == "Papper") {
+            $this->gesture = new Papper;
+        }
     }
 }
