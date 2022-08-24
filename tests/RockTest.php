@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class RockTest extends TestCase
 {
-<<<<<<< HEAD
     public function test_is_a_rock()
     {
     $rock = new Rock();
@@ -16,7 +15,6 @@ class RockTest extends TestCase
     }
     
 }
-=======
     /** @test */
     public function test_is_a_rock()
     {
@@ -27,5 +25,3 @@ class RockTest extends TestCase
         // Then
         $this->assertEquals("Rock", $result);
     }
-}
->>>>>>> develop
