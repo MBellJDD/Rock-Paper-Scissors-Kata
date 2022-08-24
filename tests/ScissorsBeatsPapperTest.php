@@ -22,4 +22,16 @@ class ScissorsBeastsPapper extends TestCase
 
         $this->assertEquals("Player 1 wins", $winner);
     }
+    public function test_player2_scissors_wins_player1_papper()
+    {
+        $game = new Game;
+        $player1 = new Player;
+        $player2 = new Player;
+
+        $player2->chose("Scissors");
+        $player1->chose("Papper");
+        $winner = $game->start($player1, $player2);
+
+        $this->assertEquals("Player 2 wins", $winner);
+    }
 }

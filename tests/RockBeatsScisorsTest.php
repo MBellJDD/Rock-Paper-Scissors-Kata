@@ -22,4 +22,16 @@ class RockBeatsScissors extends TestCase
 
         $this->assertEquals("Player 1 wins", $winner);
     }
+    public function test_player2_rock_wins_player1_scissors()
+    {
+        $game = new Game;
+        $player2 = new Player;
+        $player1 = new Player;
+
+        $player2->chose("Rock");
+        $player1->chose("Scissors");
+        $winner = $game->start($player1, $player2);
+
+        $this->assertEquals("Player 2 wins", $winner);
+    }
 }

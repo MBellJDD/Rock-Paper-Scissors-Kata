@@ -19,5 +19,11 @@ class RockPaperScissors
         if ($player2->getGesture()->getType() == "Papper" && $player1->getGesture()->getType() == "Rock") {
             return "Player 2 wins";
         }
+        if ($player2->getGesture()->getType() == "Rock" && $player1->getGesture()->getType() == "Scissors") {
+            return "Player 2 wins";
+        }
+        if ($player2->getGesture()->getType() == "Scissors" && $player1->getGesture()->getType() == "Papper") {
+            return "Player 2 wins";
+        }
     }
 }
